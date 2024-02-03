@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ナビゲーションメニューのスタイル */
+/* ナビゲーションメニュー全体のスタイル */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* リスト項目を横並びにする */
+    align-items: center; /* 中央揃えにする */
+}
+
+nav li {
+    position: relative; /* ドロップダウンメニューの位置基準 */
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* ドロップダウンメニューのスタイル */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* ホバー時にドロップダウンメニューを表示 */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* ホバー時の背景色変更 */
+}
+
+.dropdown:hover a {
+    background-color: #ddd; /* ドロップダウンを持つリンクの背景色変更 */
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#content {
+    padding: 20px;
+    min-height: 500px;  /* コンテンツが少ない時でも高さを保つ */
+    background-image: url('d1704bbd-f181-463a-ba7a-06b6e4a9d297.jpg'); /* 背景画像のパス */
+    background-size: cover;  /* 全体を覆うように設定 */
+    background-position: center;  /* 中央に配置 */
+}
+
+/* レスポンシブデザイン */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* スクロールアニメーション */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fadeInElement {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}

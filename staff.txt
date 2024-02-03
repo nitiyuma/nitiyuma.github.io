@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタッフ紹介 - 整体院のウェブサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>整体院のスタッフ紹介</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="services.html">サービス</a></li>
+                <!-- 他のナビゲーションリンク -->
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="content">
+        <h2>先生の紹介</h2>
+        <img src="staff.jpg" alt="整体院の先生" style="width:100%;max-width:300px;margin:0 auto;display:block;">
+        <p>ここに先生の経歴や専門分野などの説明を入れます。</p>
+    </div>
+    
+    <footer>
+        <p>© 2024 整体院の名前. All rights reserved.</p>
+    </footer>
+</body>
+</html>
